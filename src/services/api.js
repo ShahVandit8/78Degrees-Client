@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = "http://localhost:8000/api";
+const URL = "https://cafemanagementsys.herokuapp.com/api";
 
 export const addUser = async (data) => {
     try {
