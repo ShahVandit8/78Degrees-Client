@@ -101,7 +101,7 @@ function EditTable() {
 
                           <div>
                             <img className="mx-auto mt-5 d-block" style={{ width: 250, height: 250 }} src={urlres} alt="Qr Code" name="QR_Url" />
-                            <button type="submit" className="btn btn-success mt-5 btn-block" style={{ color: 'white' }} onClick={() => downloadQRCode()}>Download QR Code</button>
+                            <button type="button" className="btn btn-success mt-5 btn-block" style={{ color: 'white' }} onClick={() => downloadQRCode()}>Download QR Code</button>
                           </div>
 
                         </div>
