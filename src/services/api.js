@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = "https://cafemanagementsys.herokuapp.com/api";
+const URL = "https://seven8degrees.onrender.com/api";
 
 export const addUser = async (data) => {
     try {
