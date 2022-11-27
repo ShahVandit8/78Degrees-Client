@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { getOrder } from '../../services/api.js'
 import PageHeading from '../../components/PageHeading';
 import moment from 'moment';
-import jsPDF from 'jspdf';
 
 function ViewOrder() {
 
@@ -18,15 +17,6 @@ function ViewOrder() {
     const loadOrderDetails = async () => {
         const response = await getOrder(id);
         setOrder(response.data);
-    }
-
-    const generatePDF = async () => {
-        var doc = new jsPDF("p", "pt");
-        doc.html(document.querySelector('#OrderPDF'), {
-            callback: function(pdf){
-                pdf.save("OrderHelloPDF.pdf");
-            }
-        })
     }
 
     return (
@@ -87,7 +77,6 @@ function ViewOrder() {
                                             <div className="col-6 text-right pr-4">{order.map(item => (<h6 style={{ fontSize: '18px' }}>&#8377;  {item.totalamount}</h6>))}</div>
                                         </div>
 
-                                        <button class="btn btn-primary mt-5 d-block mx-auto" type="button" onClick={generatePDF}><i className="fas fa-download"></i> Download receipt</button>
                                 </div>
                             </div>
                         </div>
