@@ -270,7 +270,7 @@ function HomePage() {
           </div>
 
           {/* Recent Served Order List */}
-          <div className="card shadow mb-4 ml-4 " style={{ width: '48.5%' }}>
+          <div className="card shadow mb-4 ml-lg-3 ml-0" style={{ width: '48.5%' }}>
             <div className="card-header py-3" style={{ backgroundColor: '#DC3545' }}>
               <h6 className="m-0 font-weight-bold" style={{ color: 'white' }}>Served Orders</h6>
             </div>
