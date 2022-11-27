@@ -1,4 +1,3 @@
-import Main from './Main.js';
 import Contact from './Contact.js';
 import Features from './Features.js';
 import About from './About.js';

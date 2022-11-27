@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PageHeading from '../../components/PageHeading';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { getOrderTicket } from '../../services/api'
+import { getTotalOrder } from '../../services/api'
 
 
 function SalesAndBills() {
@@ -14,7 +14,7 @@ function SalesAndBills() {
   }, []);
 
   const geNewOrderDetails = async () => {
-    let allNewOrder = await getOrderTicket();
+    let allNewOrder = await getTotalOrder();
     setOrder(allNewOrder.data);
   }
 

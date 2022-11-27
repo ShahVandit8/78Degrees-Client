@@ -10,7 +10,6 @@ function Main() {
             {/* <div id="content-wrapper" className="d-flex flex-column">
                 <div id="content"> */}
                     <Topbar />
-                    
                 {/* </div>
             </div> */}
         </>
